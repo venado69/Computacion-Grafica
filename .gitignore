@@ -1,0 +1,12 @@
+.vs/
+**/x64/
+**/Debug/
+**/Release/
+*.pdb
+*.iobj
+*.ipdb
+*.tlog
+*.vcxproj.user
+~$*
+*.blend1
+*.bak
