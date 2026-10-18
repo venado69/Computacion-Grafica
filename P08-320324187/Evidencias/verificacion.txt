@@ -1,0 +1,9 @@
+Prueba callback Window: L/1/2, repeticion e independencia OK.
+nave-on-motores-00 puntos=3 spots=2 GL=0
+nave-on-motores-10 puntos=4 spots=2 GL=0
+nave-on-motores-01 puntos=4 spots=2 GL=0
+nave-on-motores-11 puntos=5 spots=2 GL=0
+nave-off-motores-00 puntos=2 spots=1 GL=0
+nave-off-motores-10 puntos=3 spots=1 GL=0
+nave-off-motores-01 puntos=3 spots=1 GL=0
+nave-off-motores-11 puntos=4 spots=1 GL=0

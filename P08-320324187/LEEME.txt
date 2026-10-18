@@ -1,0 +1,47 @@
+PRACTICA 08 ILUMINACION 2 - 320324187
+
+Archivos para entregar por separado:
+P08-320324187.pdf - reporte.
+P08-320324187.cpp - main.
+P08-320324187.zip - recursos, clases, proyecto y ejecutable.
+El PDF y el main no estan dentro del ZIP, conforme a la indicacion del profesor.
+
+EJECUTAR
+Extraer todo el ZIP y abrir P08-320324187/P08-320324187.exe.
+Mantener Models, Textures, shaders y las DLL en esa carpeta.
+
+COMPILAR
+Colocar el main P08-320324187.cpp y el ZIP en la misma carpeta.
+Extraer el ZIP ahi: se crea la subcarpeta P08-320324187.
+Abrir su solucion P08-320324187.sln en Visual Studio con C++, toolset v145,
+Windows SDK y configuracion Release x64. El proyecto busca el main un nivel arriba.
+Las bibliotecas y encabezados estan incluidos en dependencias, con rutas relativas.
+
+CONTROLES
+L: alternar juntas la luz puntual y la spotlight de la nave.
+1: alternar motor 1, su plasma y su luz puntual azul.
+2: alternar motor 2, su plasma y su luz puntual azul.
+Tambien funcionan 1 y 2 del teclado numerico.
+WASD: mover camara. Q/E: bajar/subir camara. Mouse: mirar.
+I/K: subir/bajar avion. C: ciclo de color del faro.
+H/P: luces del Holocron/pinza. 7/8: brazo. Flechas: mover Rover. R: orbita. Esc: salir.
+Mantener las teclas de movimiento; las luces cambian una vez por pulsacion.
+Al iniciar: luces de nave encendidas y motores apagados.
+
+ORGANIZACION
+Teclado y banderas en Window.h/Window.cpp.
+Luces y variables persistentes en Scene.h; actualizacion y dibujo en Scene.cpp.
+El while del main solo llama a Frame. Las luces se construyen antes de ese ciclo.
+Todas las luces locales tienen atenuacion lineal y cuadratica.
+Se conserva la escena E08 con su piso y skybox, avion, dado, Holocron y Rover.
+La nave se anade a esa escena; no hay plataforma nueva.
+
+RECURSOS
+Nave: Kenney, Space Kit, craft_speederB, CC0.
+Fuente y licencia junto al OBJ; geometria original con UV/materiales adaptados.
+Plasma PNG RGBA con mezcla aditiva y luz azul por motor.
+
+VERIFICACION
+Release x64 compilado correctamente; se conservan advertencias de la base.
+--evidencia comprueba controles y guarda los ocho estados; todos con GL=0.
+Las capturas PNG y verificacion.txt se incluyen en Evidencias.
