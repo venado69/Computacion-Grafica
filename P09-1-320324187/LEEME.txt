@@ -1,0 +1,5 @@
+P09-1 Animacion basica
+Ejecutar Release/P09-1-320324187.exe con todos los recursos de Release.
+Compilar solucion: Release x64.
+1 general, 2 nave, 3 satelite, 0 libre. WASD/Q/E/mouse para camara libre. Esc salir.
+Ver README.md del repositorio para detalles.

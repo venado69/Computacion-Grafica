@@ -1,0 +1,8 @@
+.vs/
+obj/
+*.user
+*.suo
+*.pdb
+*.ipdb
+*.iobj
+*.tlog
