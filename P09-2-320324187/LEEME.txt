@@ -1,0 +1,5 @@
+Practica 9-2 Animacion compleja
+Ejecutar Release/P09-2-320324187.exe con los recursos de Release.
+Compilar solucion Release x64, Visual Studio 2026, v145.
+1 general; 2 cohete; 3 holocron; 0 camara libre; Esc salir.
+Ciclo automatico de 24 segundos. Ver README.md del repositorio.

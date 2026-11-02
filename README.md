@@ -1,36 +1,39 @@
-# Práctica 9-1 Animación básica
+# Práctica 9-2 Animación compleja
 
-**Alumno:** Venancio Miguel Tapia Verastegui  
-**Cuenta:** 320324187  
-**Laboratorio:** Computación Gráfica e Interacción Humano Computadora, UNAM  
-**Semestre:** 2027-1
+Venancio Miguel Tapia Verastegui · 320324187 · Laboratorio 02 · Semestre 2027-1
+
+Rama derivada de Practica-9. Se conserva la práctica 9-1 y se agrega la entrega de la 9-2.
 
 ## Actividades
 
-1. Una nave recorre automáticamente un circuito cerrado con rectas, curvas, rampa de subida y rampa de bajada. La orientación sigue la dirección y la pendiente del recorrido.
-2. El satélite vuela en una trayectoria elíptica con altura variable. Sus dos paneles y pala superior se animan automáticamente alrededor de sus pivotes originales.
+1. Holocrón original con sus ocho esquinas girando sobre su propio eje diagonal a 60 grados por segundo.
+2. Cohete Saturn V original del previo 07, con texturas, despegue mediante una curva Bézier cúbica y orientación según la tangente.
 
-## Archivos de entrega
+## Entrega
 
-- `P09-1-320324187.pdf`: reporte con el formato del profesor, capturas de código y ejecución, problemas, conclusiones y bibliografía.
-- `P09-1-320324187.cpp`: copia del archivo principal para consulta.
-- `P09-1-320324187/`: solución de Visual Studio, código fuente, modelos, texturas, shaders y dependencias.
-- `P09-1-320324187/Release/`: ejecutable compilado en Release x64, bibliotecas DLL y recursos necesarios para ejecutarlo.
+- P09-2-320324187.pdf: reporte en el formato del profesor, fecha de entrega 01/11/2026, capturas de código y ejecución, problemas, experiencia, conclusión y bibliografía APA.
+- P09-2-320324187.cpp: archivo principal para consulta.
+- P09-2-320324187/: solución Visual Studio, código C++ y cabeceras, modelos, texturas, shaders y dependencias.
+- P09-2-320324187/Release/: ejecutable Windows x64, DLL y recursos listos para ejecutar.
 
 ## Ejecutar
 
-Descargar la rama completa y abrir `P09-1-320324187/Release/P09-1-320324187.exe` en Windows x64. Conservar las DLL y las carpetas Models, Textures y shaders junto al ejecutable. La animación comienza automáticamente.
+Descargar la rama completa, extraer y abrir EJECUTAR-P09-2.cmd o P09-2-320324187/Release/P09-2-320324187.exe. Conservar los recursos junto al ejecutable.
 
-**1:** vista general; **2:** seguir nave; **3:** seguir satélite; **0:** cámara libre. **WASD**, **Q/E** y mouse controlan la cámara libre. **Esc:** salir.
+1: vista general. 2: seguir cohete. 3: holocrón. 0: cámara libre. WASD, Q/E y mouse: cámara libre. Esc: salir.
+
+Las animaciones empiezan automáticamente. El cohete repite un ciclo de 24 segundos: espera de 2 s, vuelo de 20 s y espera final de 2 s; después regresa al inicio para repetir la demostración.
 
 ## Compilar
 
-Abrir `P09-1-320324187/P09-1-320324187.sln` con Visual Studio 2026 y herramientas de C++ v145. Seleccionar **Release | x64** y compilar. La salida y sus recursos quedan en `Release`.
+Abrir P09-2-320324187/P09-2-320324187.sln con Visual Studio 2026, herramientas C++ v145 y Windows SDK. Seleccionar Release | x64. El proyecto copia ejecutable, DLL y recursos a Release.
 
 ## Verificación
 
-El programa comprueba 24 000 pasos antes de iniciar la ventana: cierre del circuito, orientación, subida y bajada, y límites de las articulaciones. El modo `--evidencia` genera siete capturas; la ejecución comprobada registró GL=0 en todas.
+Compilación Release x64 correcta. La verificación numérica comprueba 1201 muestras de la trayectoria, ascenso continuo y tangente no nula. El modo --evidencia genera siete capturas; todas registraron GL=0.
 
-## Recursos
+## Modelo del cohete
 
-Base: ejercicio de práctica 09 y shaders del profesor. Satélite articulado reutilizado de la práctica previa. Nave de Kenney Space Kit, licencia CC0; información incluida en `Models/FUENTE.txt` y `Models/LICENCIA-Kenney.txt`.
+NASA / Michael D. Carbajal. Saturn V. https://science.nasa.gov/3d-resources/saturn-v/
+
+Archivo original recuperado de Practica07/Previo07-insumos/Saturn V.glb. Conversión local a OBJ con texturas originales, centrado y escalado uniforme a 24 unidades de altura. La fuente se conserva en Models/FUENTE-SATURN-V.txt.

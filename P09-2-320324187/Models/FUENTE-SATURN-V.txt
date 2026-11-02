@@ -1,0 +1,4 @@
+Modelo original: Practica07/Previo07-insumos/Saturn V.glb
+NASA / Michael D. Carbajal. Saturn V.
+https://science.nasa.gov/3d-resources/saturn-v/
+Conversion local a OBJ; texturas originales extraidas; geometria centrada y escalada a altura 24.

@@ -6,3 +6,6 @@ obj/
 *.ipdb
 *.iobj
 *.tlog
+
+Evidencias/
+*.ppm
